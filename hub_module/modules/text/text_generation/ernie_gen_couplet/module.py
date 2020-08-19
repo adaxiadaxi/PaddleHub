@@ -89,7 +89,7 @@ class ErnieGen(hub.NLPPredictionModule):
             predicted_data = texts
         else:
             raise ValueError(
-                "The input data is unexpected. Texts should be a list with nonempty string elements."
+                "The input data is unexpected. The parameter: texts should be a list with nonempty string elements."
             )
 
         if use_gpu and "CUDA_VISIBLE_DEVICES" not in os.environ:
